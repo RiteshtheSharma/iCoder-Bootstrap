@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>iCoder - Heaven For Programmers</title>
+
+  </head>
+ 
+  <body>
+  
+
+
+    <nav class="navbar navbar-expand-lg navbar-primary bg-dark ">
+        <div class="container-fluid">
+          <a class="nav-link disabled  text-info" href="#"><h2>iCoder</h2></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Topics
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Developing</a></li>
+                  <li><a class="dropdown-item" href="#">AI</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">CC</a></li>
+                </ul>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html" tabindex="-1" aria-disabled="true">Contact Us</a>
+              </li>
+           
+            </ul>
+          
+              
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-info" type="submit">Search</button>
+                </form>
+              
+             <div class="mx-2 "><button class="btn btn-outline-info me-1" type="submit"  data-bs-toggle="modal" data-bs-target="#loginModal">Login</button><button class="btn btn-outline-info ms-1" type="submit"  data-bs-toggle="modal" data-bs-target="#signupModal">Sign up</button></div>
+        
+        
+            
+
+          
+        </div>
+      </nav>
+     
+
+
+
+
+<!--Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login to iCoder</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       
+
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+     
+         
+        </form>
+
+      </div>
+      <div class="modal-footer">
+       
+        <button type="button" class="btn btn-primary">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+     
+
+
+
+
+
+<!--Sign Up Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">Sign up to iCoder</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="ExampleInputPassword1" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="ExampleInputPassword1">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Create Account</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        
+        <div class="carousel-inner  " >
+          <div class="carousel-item active">
+            <img src="https://source.unsplash.com/1600x300/?python" class="d-block  " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/1600x300/?Java" class="d-block "  alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/1600x300/?penguin" class="d-block " alt="...">
+          </div>
+       </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div >   
+
+      <div class="float-sm col-lg-6 col-md-8 mx-auto mt-3 text-center"  ><h1 class="fw-light" ><u>Start learning</u></h1></div>
+    
+     
+      <div class="row row-cols-1 row-cols-md-3 g-4 pt-3">
+        <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img src="data:image/png;base64,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" style="width:270px;height:200px;padding-left: 20px;" class="card-img-top"class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">C++</h5>
+          <p class="card-text">C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language, or "C with Classes".    <br><br><br> <br> <br>  </p>
+          <a href="#" class="btn btn-primary">Click Here to start learning!</a>
+        </div></div>
+      </div>  
+      <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8CeQPcq9-PgH7GFXIGyfispzQ6WIKAxxIdw&usqp=CAU"  style="width:275px;height:200px;margin:0px;" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Python</h5>
+          <p class="card-text">Python is an interpreted, high-level and general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant indentation.       <br><br><br> <br>                                                            </p>
+          <a href="#" class="btn btn-primary">Click Here to start learning!</a>
+        </div>
+      </div> </div>
+      <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img src="data:image/png;base64,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"  style="width:275px;height:200px;margin:0px;"  class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">C</h5>
+          <p class="card-text">C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system. By design, C provides constructs that map efficiently to typical machine instructions</p>
+          <a href="#" class="btn btn-primary">Click Here to start learning!</a>
+        </div>
+      </div> </div>
+
+      <div class="col ">
+      <div class="card " style="width: 18rem;">
+        <img style="width:267px;height:200px;" class=" card-img-top img-fluid" src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Java</h5>
+          <p class="card-text">Java is a class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible..                                                                                                                         </p>
+          <a href="#" class="btn btn-primary">Click Here to start learning!</a>
+        </div>
+      </div></div>
+      </div></div>
+
+
+        </div><!-- /.col-lg-4 -->
+      </div>
+
+   
+    
+    <footer class="text-muted py-5 ">
+      <div class="container fluid-sm">
+        <p class="float-end mb-1">
+        <h1 style="text-align: right;">  <a href="#">^</a></h1>
+        </p>
+       
+        <p class="mb-1 text-center" >© 2020-2021 iCoder.com</p>
+        <p class="mb-0 text-center"><a href="/">Home</a></p> 
+       
+      </div>
+    </footer>
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
